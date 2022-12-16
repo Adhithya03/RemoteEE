@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/water.css@2/out/water.css">
+  <title>Injection</title>
+</head>
+<body>
+
+  <h1>Resource Injector 5000</h1>
+  <form action="sqlInjection.php" method="post">
+<div>
+    <label  for="subject">Subject</label>
+    <select id="subject">
+      <option value="poel">Power electronics</option>
+      <option value="mach" selected>Machines</option>
+      <option value="posy">Power systems</option>
+      <option value="mai">Measurements</option>
+      <option value="cosy">Control systems</option>
+      <option value="dsip">Discrete signal processing</option>
+      <option value="oali">Op Amp & Linear IC</option>
+      <option value="diel">Digital electronics</option>
+      <option value="edac">Electronic devices and Circuits</option>
+      <option value="prsw">Protection and Switch gear</option>
+      <option value="bect">Basic electric Circuit Theory</option>
+    </select>
+  </div>
+  <div> 
+    <label  for="cat">Category</label>
+    <select id="cat">
+      <option value="reso" selected>Resources</option>
+      <option value="mukn">Must know</option>
+      <option value="gtkn">Good to know</option>
+      <option value="ques">Questions</option>
+      <option value="usma">Useful materials</option>
+      <option value="simu">Simulations</option>
+      <option value="mics">Miscellaneous</option>
+    </select>
+  </div>
+  <div>
+    <label for="name">Name</label>
+    <input type="text" id="name">
+
+  </div>
+
+  <div>
+    <label for="link">Link/Links</label>
+    <textarea id="link" cols="50" rows="3"></textarea>
+  </div>  
+
+  <div>
+    <fieldset>
+      <legend>Resource Type</legend>
+        <div>
+          <div>
+            <input type="radio" name='restype' id="em0" value="0" checked>
+            <label for="em0">Video</label>
+          </div>
+          <div>
+            <input type="radio" name='restype' id="em1" value="1">
+            <label for="em1">Text</label>
+          </div>
+          <div>
+            <input type="radio" name='restype' id="em2" value="2">
+            <label for="em2">PDF</label>
+          </div>
+          <div>
+            <input type="radio" name='restype' id="em3" value="3">
+            <label for="em3">Word document</label>
+          </div>
+          <div>
+            <input type="radio" name='restype' id="em4" value="4">
+            <label for="em4">PPT</label>
+          </div>
+          <div>
+            <input type="radio" name='restype' id="em5" value="5">
+            <label for="em5">Audio</label>
+          </div>
+        </div>
+      </fieldset>
+      </div>
+
+      <div>
+      <label for="notes">Notes</label>
+      <textarea id="notes" cols="50" rows="2"></textarea>
+    </div>
+
+
+<div>
+    <fieldset>
+      <legend>Conceptual rating</legend>
+      <div>
+        <input type="radio" name='type' id="ec3" value="3">
+        <label for="ec3">Explains concepts</label>
+      </div>
+      <div>
+        <input type="radio" name='type' id="ec2" value="2" checked>
+        <label for="ec2">Explains a bit</label>
+      </div>
+      <div>
+        <input type="radio" name='type' id="ec1" value="1">
+        <label for="ec1">Barely explains</label>
+      </div>
+      <div>
+        <input type="radio" name='type' id="ec0" value="0">
+        <label for="ec0">None</label>
+      </div>
+  </fieldset>
+
+  <button> Initiate Inject</button>
+  </form>
+</body>
+</html>
