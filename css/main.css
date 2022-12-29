@@ -1,5 +1,29 @@
 @charset "utf-8";
-/* CSS Document */
-html{
-    scroll-behavior: smooth;
+html {
+  scroll-behavior: smooth;
+}
+h1 {
+  color: aliceblue;
+}
+
+.mainindexbody{
+  background: linear-gradient(0deg, hsla(198, 100%, 4%, 1) 0%, hsla(201, 100%, 6%, 1) 22%, hsla(200, 100%, 10%, 1) 51%, hsla(199, 100%, 14%, 1) 76%, hsla(200, 100%, 18%, 1) 100%, hsla(200, 100%, 18%, 1) 100%);
+}
+.card-body {
+  background: #001C2B;
+}
+.card:hover {
+    transition: all .5s;
+    transform: scale(0.95);
+}
+.card-img-top:hover {
+  transition: all .3s;
+  border-style:solid;
+  border-color: aliceblue;
+  border-width: thick;
+  box-shadow: 0 20 10px rgba(0, 0, 0, 0.9);
+}
+
+.text-center{
+    padding-top: 100px;
 }
