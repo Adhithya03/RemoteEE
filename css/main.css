@@ -1,16 +1,53 @@
 @charset "utf-8";
+
+@font-face {
+  font-family: "VendettaBold";
+  src: url("ce39fcf7c95aefad233d790b08a71ec4.eot"); /* IE9*/
+  src: url("ce39fcf7c95aefad233d790b08a71ec4.eot?#iefix") format("embedded-opentype"), /* IE6-IE8 */
+  url("ce39fcf7c95aefad233d790b08a71ec4.woff2") format("woff2"), /* chrome、firefox */
+  url("ce39fcf7c95aefad233d790b08a71ec4.woff") format("woff"), /* chrome、firefox */
+  url("ce39fcf7c95aefad233d790b08a71ec4.ttf") format("truetype"), /* chrome、firefox、opera、Safari, Android, iOS 4.2+*/
+  url("ce39fcf7c95aefad233d790b08a71ec4.svg#VendettaBold") format("svg"); /* iOS 4.1- */
+}
+
+@font-face {
+font-family: "VendettaLight";
+  src: url("8dbd6658bd4be434d29e4253a1afc56c.eot"); /* IE9*/
+  src: url("8dbd6658bd4be434d29e4253a1afc56c.eot?#iefix") format("embedded-opentype"), /* IE6-IE8 */
+  url("8dbd6658bd4be434d29e4253a1afc56c.woff2") format("woff2"), /* chrome、firefox */
+  url("8dbd6658bd4be434d29e4253a1afc56c.woff") format("woff"), /* chrome、firefox */
+  url("8dbd6658bd4be434d29e4253a1afc56c.ttf") format("truetype"), /* chrome、firefox、opera、Safari, Android, iOS 4.2+*/
+  url("8dbd6658bd4be434d29e4253a1afc56c.svg#VendettaLight") format("svg"); /* iOS 4.1- */
+}
+
+@font-face {font-family: "JournalBold";
+  src: url("819dc24aff7f42cea351eb8124280192.eot"); /* IE9*/
+  src: url("819dc24aff7f42cea351eb8124280192.eot?#iefix") format("embedded-opentype"), /* IE6-IE8 */
+  url("819dc24aff7f42cea351eb8124280192.woff2") format("woff2"), /* chrome、firefox */
+  url("819dc24aff7f42cea351eb8124280192.woff") format("woff"), /* chrome、firefox */
+  url("819dc24aff7f42cea351eb8124280192.ttf") format("truetype"), /* chrome、firefox、opera、Safari, Android, iOS 4.2+*/
+  url("819dc24aff7f42cea351eb8124280192.svg#JournalBold") format("svg"); /* iOS 4.1- */
+}
+
 html {
   scroll-behavior: smooth;
 }
+
 h1 {
-  color: aliceblue;
+  color: white;
+  font-family:"VendettaBold" !important;
+  font-size: 50px;  
+}
+
+nav{
+    background-color: #312d2e;
 }
 
 .mainindexbody{
-  background: linear-gradient(0deg, hsla(198, 100%, 4%, 1) 0%, hsla(201, 100%, 6%, 1) 22%, hsla(200, 100%, 10%, 1) 51%, hsla(199, 100%, 14%, 1) 76%, hsla(200, 100%, 18%, 1) 100%, hsla(200, 100%, 18%, 1) 100%);
+  background: #312d2e;
 }
 .card-body {
-  background: #001C2B;
+  background: #423f41;
 }
 .card:hover {
     transition: all .5s;
@@ -21,9 +58,17 @@ h1 {
   border-style:solid;
   border-color: aliceblue;
   border-width: thick;
-  box-shadow: 0 20 10px rgba(0, 0, 0, 0.9);
 }
 
 .text-center{
     padding-top: 100px;
+}
+
+.card-title{
+      font-family:"JournalBold" !important;
+    color:#fffdd5;
+}
+.card-text{
+    font-family:"JournalBold" !important;
+    color:    #9f877d;
 }
